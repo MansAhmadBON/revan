@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 35" width="31" height="35">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ef4035 } 
+	</style>
+	<g id="Services">
+		<g id="3">
+			<g id="Group 1 copy 6">
+				<path id="Notes" class="shp0" d="M7 29L1 29L1 23L7 23L7 29ZM3 27L5 27L5 25L3 25L3 27ZM7 21L1 21L1 15L7 15L7 21ZM3 19L5 19L5 17L3 17L3 19ZM29 34L3 34L3 31.05L5 31.05L5 32L27 32L27 4L5 4L5 4.98L3 4.98L3 2L29 2L29 34ZM7 13L1 13L1 7L7 7L7 13ZM3 11L5 11L5 9L3 9L3 11ZM23 32L21 32L21 4L23 4L23 32Z" />
+			</g>
+		</g>
+	</g>
+</svg>

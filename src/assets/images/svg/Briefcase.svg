@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 33" width="35" height="33">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ef4035 } 
+	</style>
+	<g id="top">
+		<g id="logo">
+			<path id="Briefcase" class="shp0" d="M34 32L2 32L2 19L34 19L34 32ZM4 30L32 30L32 21L4 21L4 30ZM18 24C16.35 24 15 22.65 15 21L17 21C17 21.55 17.45 22 18 22C18.55 22 19 21.55 19 21L21 21C21 22.65 19.65 24 18 24ZM25 9L21 9L21 7C21 5.35 19.65 4 18 4C16.35 4 15 5.35 15 7L15 9L11.01 9L11.01 7L13 7C13 4.24 15.24 2 18 2C20.76 2 23 4.24 23 7L25 7L25 9ZM34 17L32 17L32 13L4 13L4 17L2 17L2 11L34 11L34 17Z" />
+		</g>
+	</g>
+</svg>

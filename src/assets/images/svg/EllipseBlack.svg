@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1e1e20 } 
+	</style>
+	<g id="Videos or slideshow">
+		<g id="dots">
+			<path id="Ellipse 1 copy" class="shp0" d="M6.31 2C9.08 2 11.32 4.24 11.32 7C11.32 9.76 9.08 12 6.31 12C3.54 12 1.29 9.76 1.29 7C1.29 4.24 3.54 2 6.31 2Z" />
+		</g>
+	</g>
+</svg>

@@ -7,7 +7,7 @@ const uglifycss = require('gulp-uglifycss');
 const image = require('gulp-image');
 
 function img(){
-    return gulp.src('src/images/**')
+    return gulp.src('src/assets/images/**')
                .pipe(image({
                     pngquant: true,
                     optipng: false,

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 29" width="33" height="29">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ef4035 } 
+	</style>
+	<g id="Services">
+		<g id="2">
+			<g id="Group 1 copy 3">
+				<path id="Layers" class="shp0" d="M16.02 18.12L1.02 10.06L16.02 2L31.02 10.06L16.02 18.12ZM5.2 10.06L16.02 15.87L26.83 10.06L16.02 4.25L5.2 10.06ZM16.02 22.92L1.68 15.9L2.55 14.12L16.02 20.71L29.48 14.12L30.35 15.9L16.02 22.92ZM16.02 28L1.68 20.98L2.55 19.2L16.02 25.79L29.48 19.2L30.35 20.98L16.02 28ZM26.94 21.45" />
+			</g>
+		</g>
+	</g>
+</svg>
