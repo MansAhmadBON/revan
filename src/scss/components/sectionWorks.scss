@@ -1,0 +1,25 @@
+@import '../vendors/mixins.scss';
+@import '../base/vars.scss';
+
+.sectionWorks {
+    padding-top: 121px;
+    padding-bottom: 150px;
+}
+.wrapWorksColumns {
+    display: flex;
+    .worksColumn-left {
+        flex-basis: 50%;
+    }
+    .worksColumn-right {
+        flex-basis: 50%;
+        .worksColumn__text {
+            color: $primeTextColor;
+            width: 325px;
+            line-height: 26px;
+            padding-top: 3px;
+        }
+    }
+}
+.worksColumn__title {
+    @include title($primeTitleColor, uppercase)
+}

@@ -25,3 +25,8 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+@mixin title($color, $textTrans) {
+    color: $color;
+    text-transform: $textTrans;
+}
