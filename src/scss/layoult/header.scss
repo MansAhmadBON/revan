@@ -1,0 +1,19 @@
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url(../assets/img/bg/backTop.png);
+    background-size: cover;
+    .headerShadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-top: 50px;
+    }
+}
+
+p {
+    color: #fff;
+}

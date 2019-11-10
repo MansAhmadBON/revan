@@ -1,0 +1,24 @@
+@import '../base/index';
+@import '../vendors/mixins.scss';
+
+.wrapperPrimeContentHeader {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    .primeContentHeader {
+        max-width: 600px;
+        &__text {
+            font-family: 'ProximaNova';
+            font-size: 17px;
+            line-height: 24px;
+            color: $headerTextColor;
+            width: 540px;
+            &::after {
+                @include line(#fff, 15px, 40px);
+            }
+        }
+        &__btn {
+            @include btn();
+        }
+    }
+}

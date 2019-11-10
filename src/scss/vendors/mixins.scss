@@ -1,0 +1,27 @@
+@import '../base/index';
+
+@mixin line($bgColor, $mrgTop, $mrgBottom) {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: $bgColor;
+    margin-top: $mrgTop;
+    margin-bottom: $mrgBottom;
+}
+
+@mixin btn {
+    background-color: transparent;
+    border: 2px solid $secondaryTextColor;
+    font-family: $primeTextFont;
+    letter-spacing: 1px;
+    color: $h1color;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 23px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

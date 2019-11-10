@@ -1,6 +1,8 @@
-@import '../base/fonts.scss';
+@import '../base/index';
+
 h1 {
-    font-family: 'ProximaNova';
-    font-weight: 900;
-    font-style: italic;
+    font-family: 'Gotham Rounded';
+    font-size: 48px;
+    line-height: 57px;
+    color: $h1color;
 }
