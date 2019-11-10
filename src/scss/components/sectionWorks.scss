@@ -9,6 +9,12 @@
     display: flex;
     .worksColumn-left {
         flex-basis: 50%;
+        .worksColumn__title {
+            &::after {
+                @include line(#000, 30px);
+                margin-left: 4px;
+            }
+        }
     }
     .worksColumn-right {
         flex-basis: 50%;

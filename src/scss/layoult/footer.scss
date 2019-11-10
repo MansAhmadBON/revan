@@ -1,0 +1,20 @@
+@import '../base/index';
+
+footer {
+    height: 152px;
+    background-color: $primeBgColor;
+    .footerItems {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &__item {
+            flex-basis: 25%;
+            .footerLink {
+                font-family: $primeTextFont;
+                font-size: 13px;
+                color: #76767b;
+            }
+        }
+    }
+}

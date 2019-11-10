@@ -1,6 +1,6 @@
 @import '../base/index';
 
-@mixin line($bgColor, $mrgTop, $mrgBottom) {
+@mixin line($bgColor, $mrgTop, $mrgBottom: 0) {
     content: '';
     display: block;
     width: 20px;
