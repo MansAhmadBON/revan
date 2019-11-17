@@ -1,0 +1,63 @@
+@import '../base/index';
+.catalogServices {
+    text-align: center;
+    display: flex;
+    margin-bottom: 50px;
+    .catalogServicesColumn {
+        width: 190px;
+        margin-right: 10px;
+        &__item {
+            height: 190px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            transition: $transition;
+            &:hover {
+                background-color: $hoverServesCart;
+            }
+            &:hover .wrapperServiceIco__title{
+                color: $secondaryTextColor;
+            }
+            .wrapperServiceIco {
+                height: 190px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: rotate(-45deg);
+                &__title {
+                    font-family: $primeTextFont;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .catalogServicesColumn-1 {
+        transform: rotate(45deg);
+    }
+    .catalogServicesColumn-2 {
+        transform: rotate(45deg) translateX(59px) translateY(139px);
+    }
+    .catalogServicesColumn-3 {
+        transform: rotate(45deg) translateX(118px) translateY(278px);
+    }
+    
+    @media (min-width: 1200px) {
+        transform: translateX(-70px);
+        margin-bottom: 0;
+        .catalogServicesColumn-1 {
+            transform: rotate(45deg);
+        }
+        .catalogServicesColumn-2 {
+            transform: rotate(45deg) translateX(59px) translateY(-59px);
+        }
+        .catalogServicesColumn-3 {
+            transform: rotate(45deg) translateX(118px) translateY(-118px);
+        }
+    }
+}
+
+

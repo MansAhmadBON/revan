@@ -1,0 +1,32 @@
+@import '../base/index';
+.sectionVideo {
+    background-color: $primeBgColor;
+    padding-top: 142px;
+    padding-bottom: 152px;
+    text-align: center;
+    @media (min-width: 1200px) {
+        width: 151%;
+    }
+    &__title {
+        font-family: $secondaryFontText;
+        font-size: 39px;
+        font-weight: lighter;
+        line-height: 54px;
+        color: $h1color;
+        margin-bottom: 65px;
+    }
+    &__text {
+        width: 660px;
+        margin: 0 auto;
+        font-family: $primeTextFont;
+        font-size: 18px;
+        line-height: 28px;
+        color: $h1color;
+        margin-bottom: 27px;
+    }
+    .sectionVideoSlider {
+        width: 960px;
+        margin: 0 auto;
+        
+    }
+}

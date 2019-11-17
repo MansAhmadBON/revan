@@ -2,8 +2,12 @@
 @import '../base/vars.scss';
 
 .sectionWorks {
+    width: 100%;
     padding-top: 121px;
     padding-bottom: 150px;
+    @media (min-width: 1200px) {
+        width: 151%;
+    }
 }
 .wrapWorksColumns {
     display: flex;
@@ -20,7 +24,7 @@
         flex-basis: 50%;
         .worksColumn__text {
             color: $primeTextColor;
-            width: 325px;
+            width: 400px;
             line-height: 26px;
             padding-top: 3px;
         }

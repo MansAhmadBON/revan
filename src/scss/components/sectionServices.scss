@@ -1,0 +1,43 @@
+@import '../base/index';
+@import '../vendors/mixins.scss';
+.sectionServices {
+    width: 100%;
+    background-color: $secondaryBgColor;
+    padding-top: 172px;
+    padding-bottom: 200px;
+    @media (min-width: 1200px) {
+        width: 151%;
+        padding-bottom: 160px;
+    }
+    .servicesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            align-items: end;
+            justify-content: space-between;
+        }
+        &__column-left {
+            width: 400px;
+            height: 270px;
+            margin-top: 110px;
+            @media (max-width: 1200px) {
+                margin-top: 0;
+                width: 900px;
+            }
+        }
+        &__title{
+            &::after {
+                @include line(#000, 29px, 56px)
+            }
+        }
+        &__text {
+            font-family: $primeTextFont;
+            font-size: 18px;
+            line-height: 26px;
+            color: $primeTextColor;
+        }
+    }
+}

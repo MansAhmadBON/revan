@@ -40,7 +40,7 @@ function style(){
 
 
 function scripts(){
-    return gulp.src('./src/js/*.js')
+    return gulp.src('./src/js/**')
                .pipe(gulp.dest('./build/js'))
                .pipe(browserSync.stream());
 }

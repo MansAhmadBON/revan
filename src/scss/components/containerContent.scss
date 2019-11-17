@@ -1,6 +1,9 @@
 .containerContent {
     max-width: 1214px;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+        width: 900px;
+    }
 }
 
 .containerContent-footer {

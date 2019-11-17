@@ -10,6 +10,8 @@
         color: $secondaryTextColor;
         font-size: 18px;
         font-family: $primeTextFont;
-        transform: translateX(-50%)
+    }
+    @media (min-width: 1200px) {
+        width: 151%;
     }
 }
