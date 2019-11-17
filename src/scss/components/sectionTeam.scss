@@ -1,0 +1,50 @@
+@import '../base/index';
+.sectionTeam {
+    .servicesContent__column-left {
+        position: relative;
+    }
+    &__subTitle{
+        font-family: $secondaryFontText;
+        font-size: 14px;
+        color: $textColorRed;
+        position: absolute;
+        top: 77.5px;
+        left: 31px;
+    }
+}
+
+.crewmanItem {
+    position: relative;
+    overflow: hidden;
+    &__descr {
+        display: none;
+        padding-top: 14px;
+        text-align: center;
+        background-color: #ef4035;
+        opacity: .9;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-45deg) translateX(44px) translateY(-5px);
+        height: 100%;
+        width: 150%;
+        transition: $transition;
+        .crewmanItemName, .crewmanItemProf {
+            display: block;
+            padding-right: 25px;
+            color: $secondaryTextColor;
+        }
+        .crewmanItemName {
+            font-family: $primeTextFont;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .crewmanItemProf {
+            font-family: $secondaryFontText;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    }
+    &:hover .crewmanItem__descr {
+        display: block;
+    }
+}
