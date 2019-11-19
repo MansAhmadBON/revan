@@ -1,0 +1,28 @@
+@import '../base/index';
+@import '../vendors/mixins.scss';
+.sectionCase {
+    padding-top: 241px;
+    padding-bottom: 206px;
+    background-color: $primeBgColor;
+    .caseContent {
+        display: flex;
+        justify-content: space-between;
+        &__title {
+            color: $secondaryTitleColor;
+            &::after {
+                @include line(#fff, 18px, 56px)
+            }
+        }
+        &__text {
+            width: 412px;
+            font-family: $primeTextFont;
+            font-size: 18px;
+            line-height: 26px;
+            color: $secondaryTextColor;
+        }
+        &__btn-main {
+            margin-top: 72px;
+            @include btn;
+        }
+    }
+}

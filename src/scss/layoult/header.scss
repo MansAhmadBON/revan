@@ -4,9 +4,6 @@ header {
     width: 100%;
     background-image: url(../assets/img/bg/backTop.png);
     background-size: cover;
-    @media (min-width: 1200px) {
-        width: 151%;
-    }
     .headerShadow {
         position: absolute;
         top: 0;

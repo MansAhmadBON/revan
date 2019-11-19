@@ -4,9 +4,6 @@ footer {
     width: 100%;
     height: 152px;
     background-color: $primeBgColor;
-    @media (min-width: 1200px) {
-        width: 151%;
-    }
     .footerItems {
         width: 100%;
         height: 100%;

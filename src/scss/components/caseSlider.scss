@@ -1,0 +1,45 @@
+@import '../base/index';
+.caseSliderItems__item {
+    display: none;
+}
+
+.itemCntls {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    .cntl {
+        width: 3px;
+        height: 25px;
+        margin-bottom: 10px;
+        margin-left: 85px;
+        background: $lineWhite;
+        opacity: .2;
+        cursor: pointer;
+    }
+    .cntl-active {
+        opacity: 1;
+    }
+}
+
+.caseSliderControls {
+    margin-top: 81px;
+    text-align: center;
+    .boxBtnMob {
+        display: flex;
+        margin: 0 auto;
+        width: 225px;
+        justify-content: space-between;
+        transform: translateX(-25%);
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.itemActive {
+    display: flex;
+}
+
+

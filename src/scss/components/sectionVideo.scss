@@ -4,9 +4,6 @@
     padding-top: 142px;
     padding-bottom: 152px;
     text-align: center;
-    @media (min-width: 1200px) {
-        width: 151%;
-    }
     &__title {
         font-family: $secondaryFontText;
         font-size: 39px;
