@@ -53,7 +53,7 @@ window.onload = function(){
     //video slider
     $('.slidersBox').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         dots: true,
         arrows: false,
         lazyLoad: 'progressive'
