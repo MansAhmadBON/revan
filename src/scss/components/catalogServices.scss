@@ -36,27 +36,16 @@
             }
         }
     }
+
+   
     .catalogServicesColumn-1 {
         transform: rotate(45deg);
     }
     .catalogServicesColumn-2 {
-        transform: rotate(45deg) translateX(59px) translateY(139px);
+        transform: rotate(45deg) translateX(59px) translateY(-59px);
     }
     .catalogServicesColumn-3 {
-        transform: rotate(45deg) translateX(118px) translateY(278px);
-    }
-    
-    @media (min-width: 1200px) {
-        margin-bottom: 0;
-        .catalogServicesColumn-1 {
-            transform: rotate(45deg);
-        }
-        .catalogServicesColumn-2 {
-            transform: rotate(45deg) translateX(59px) translateY(-59px);
-        }
-        .catalogServicesColumn-3 {
-            transform: rotate(45deg) translateX(118px) translateY(-118px);
-        }
+        transform: rotate(45deg) translateX(118px) translateY(-118px);
     }
 }
 

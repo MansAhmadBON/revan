@@ -7,6 +7,7 @@
     .caseContent {
         display: flex;
         justify-content: space-between;
+        position: relative;
         &__title {
             color: $secondaryTitleColor;
             &::after {
@@ -23,6 +24,9 @@
         &__btn-main {
             margin-top: 72px;
             @include btn;
+        }
+        &__column {
+            flex-basis: 50%;
         }
     }
 }
