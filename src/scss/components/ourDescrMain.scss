@@ -1,0 +1,101 @@
+@import '../base/index';
+.ourDescrMain {
+    .ourDescrHeaderRow {
+        font-family: $primeTextFont;
+        font-size: 18px;
+        color: $primeTextColor;
+        text-transform: uppercase;
+        border-bottom: 1px solid $primeTextColor;
+        display: flex;
+        padding-bottom: 20px;
+        &__title  {
+            flex-basis: 60%;
+        }
+        &__date  {
+            flex-basis: 20%;
+        }
+        &__person  {
+            flex-basis: 20%;
+        }
+    }
+    .ourDescrRow {
+        display: flex;
+        border-bottom: 1px solid $primeTextColor;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        transition: $transition;
+        &__title {
+            font-family: $primeTextFont;
+            //font-weight: 300;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $lineBlack;
+            transition: $transition;
+        }
+        &__text {
+            font-family: $primeTextFont;
+            font-size: 16px;
+            line-height: 25px;
+            color: $primeTextColor;
+            padding-top: 30px;
+            max-width: 600px;
+            transition: $transition;
+        }
+        &__column1 {
+            flex-basis: 59%;
+            transition: $transition;
+        }
+        &__column2 {
+            font-family: $primeTextFont;
+            font-size: 18px;
+            color: $primeTitleColor;
+            flex-basis: 20%;
+            align-self: center;
+            transition: $transition;
+        }
+        &__column3 {
+            font-family: $primeTextFont;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $primeTitleColor;
+            flex-basis: 20%;
+            padding-left: 7px;
+            align-self: center;
+            transition: $transition;
+        }
+        &:hover {
+            background-image: url(../assets/img/bg/hoverBack.png);
+            background-size: cover;
+        }
+        &:hover .ourDescrRow__title {
+            color: #fff;
+        }
+        &:hover .ourDescrRow__text {
+            color: #fff;
+        }
+        &:hover .ourDescrRow__column2 {
+            color: #fff;
+        }
+        &:hover .ourDescrRow__column3 {
+            color: #fff;
+        }
+    }
+    .ourDescrRowLast {
+        padding-top: 40px;
+        text-align: center;
+        &__btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: $secondaryFontText;
+            font-size: 14px;
+            color: $textColorRed;
+            transition: $transition;
+            &:hover {
+                color: $textColorRedHover;
+            }
+        }
+    }
+}
+
