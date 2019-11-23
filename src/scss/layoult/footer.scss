@@ -10,12 +10,27 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         &__item {
             .footerLink {
                 font-family: $primeTextFont;
                 font-size: 13px;
                 color: #76767b;
+                transition: $transition;
+                &:hover {
+                    color: $secondaryTextColor;
+                }
             }
         }
+        @media (max-width: 450px) {
+            justify-content: space-around;
+            .footerItems__item-4 {
+                align-self: flex-start;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

@@ -12,5 +12,9 @@ header {
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
         padding-top: 50px;
+        @media (max-width: 800px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 }

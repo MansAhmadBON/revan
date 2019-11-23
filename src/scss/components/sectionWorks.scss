@@ -5,6 +5,15 @@
     width: 100%;
     padding-top: 121px;
     padding-bottom: 150px;
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media (max-width: 590px) {
+        text-align: center;
+        margin: 0 auto;
+        padding: 50px 10px 60px 10px;
+    }
 }
 .wrapWorksColumns {
     display: flex;
@@ -14,6 +23,9 @@
             &::after {
                 @include line(#000, 30px);
                 margin-left: 4px;
+                @media (max-width: 750px) {
+                    margin: 40px auto;
+                }
             }
         }
     }
@@ -21,10 +33,21 @@
         flex-basis: 50%;
         .worksColumn__text {
             color: $primeTextColor;
-            width: 400px;
+            max-width: 400px;
             line-height: 26px;
-            padding-top: 3px;
+            padding: 3px;
+            @media (max-width: 750px) {
+                text-align: center;
+            }
+            @media (max-width: 450px) {
+                width: 300px;
+                font-size: 14px;
+            }
         }
+    }
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 .worksColumn__title {

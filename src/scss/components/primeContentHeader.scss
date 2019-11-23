@@ -16,9 +16,39 @@
             &::after {
                 @include line(#fff, 15px, 40px);
             }
+            @media (max-width: 590px) {
+                max-width: 400px;
+                padding: 10px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            @media (max-width: 450px) {
+                width: 300px;
+                font-size: 15px;
+            }
         }
         &__btn {
             @include btn();
+            @media (max-width: 450px) {
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 750px) {
+            margin: 0 auto;
+            text-align: center;
+            &__text {
+                &::after {
+                    margin: 15px auto 40px auto;
+                }
+            }
+        }
+        @media (max-width: 450px) {
+            width: 300px;
+            &__text {
+                &::after {
+                    margin: 15px auto 0px auto;
+                }
+            }
         }
     }
 }

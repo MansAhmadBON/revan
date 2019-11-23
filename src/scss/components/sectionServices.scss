@@ -9,17 +9,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        @media (min-width: 1200px) {
-            flex-direction: column;
-            align-items: end;
-            justify-content: space-between;
-        }
         &__column-left {
             height: 270px;
             @media (max-width: 1200px) {
                 margin-top: 0;
-                width: 900px;
+                max-width: 900px;
+            }
+            @media (max-width: 590px) {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 90px;
             }
         }
         &__title{
@@ -32,6 +31,53 @@
             font-size: 18px;
             line-height: 26px;
             color: $primeTextColor;
+            @media (max-width: 1250px) {
+                width: 80%;
+            }
+            @media (max-width: 590px) {
+                max-width: 400px;
+                padding: 10px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            @media (max-width: 450px) {
+                width: 300px;
+                font-size: 14px;
+            }
         }
+        @media (max-width: 1250px) {
+            align-items: flex-start;
+        }
+        @media (max-width: 750px) {
+            &__column-left {
+                text-align: center;
+            }
+            &__title {
+                &::after {
+                    margin: 25px auto 40px auto;
+                }
+            }
+            &__text {
+                margin: 0 auto;
+            }
+        }
+        @media (max-width: 650px) {
+            &__column-right {
+                margin: 0 auto;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media (max-width: 650px) {
+        padding-bottom: 100px;
+    }
+    @media (max-width: 590px) {
+        padding-top: 50px;
+    }
+    @media (max-width: 450px) {
+        padding-bottom: 20px;
     }
 }

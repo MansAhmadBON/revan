@@ -4,11 +4,16 @@
     padding-top: 241px;
     padding-bottom: 206px;
     background-color: $primeBgColor;
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .caseContent {
         display: flex;
         justify-content: space-between;
         position: relative;
         &__title {
+            line-height: 1.2em;
             color: $secondaryTitleColor;
             &::after {
                 @include line(#fff, 18px, 56px)
@@ -20,13 +25,63 @@
             font-size: 18px;
             line-height: 26px;
             color: $secondaryTextColor;
+            @media (max-width: 750px) {
+                text-align: center;
+            }
         }
         &__btn-main {
             margin-top: 72px;
             @include btn;
+            @media (max-width: 450px) {
+                margin: 30px
+            }
         }
         &__column {
             flex-basis: 50%;
         }
+    }
+    @media (max-width: 1250px) {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        .caseContent {
+            flex-direction: column;
+            .caseContent__column-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__title {
+                &::after {
+                    margin: 0 auto;
+                    margin-top: 18px;
+                    margin-bottom: 56px;
+                }
+            }
+            &__text {
+                width: 80%;
+                @media (max-width: 450px) {
+                    width: 300px;
+                    font-size: 14px;
+                }
+            }
+            &__btn-main {
+                width: 200px;
+                margin: 72px auto 100px;
+                @include btn;
+            }
+        }
+    }
+    @media (max-width: 590px) {
+        .caseContent {
+            .caseContent__column-left {
+                max-width: 400px;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px;
+            }
+        }
+    }
+    @media (max-width: 590px) {
+        padding-top: 50px;
     }
 }

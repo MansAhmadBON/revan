@@ -24,6 +24,14 @@
     padding-bottom: 23px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: $transition;
+    @media (max-width: 450px) {
+        margin: 30px
+    }
+    &:hover {
+        background-color: $bgColorRed;
+        opacity: .9;
+    }
 }
 
 @mixin title($color, $textTrans) {

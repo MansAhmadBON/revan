@@ -9,4 +9,7 @@
         padding-left: 14px;
         color: $secondaryTextColor;
     }
+    @media (max-width: 750px) {
+        justify-content: center;
+    }
 }

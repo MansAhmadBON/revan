@@ -3,6 +3,10 @@
 .sectionOurDescr {
     padding-top: 120px;
     padding-bottom: 45px;
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .ourDescrHeader {
         display: flex;
         flex-direction: row;
@@ -20,5 +24,43 @@
             width: 435px;
             margin: 0 auto;
         }
+        @media (max-width: 1250px) {
+            flex-direction: column;
+            &__title {
+                &::after {
+                    @include line(#000, 30px, 50px);
+                }
+            }
+            &__text {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+        }
+        @media (max-width: 750px) {
+            &__title {
+                text-align: center;
+                &::after {
+                    margin: 40px auto;
+                }
+            }
+            &__text {
+                max-width: 570px;
+                text-align: center;
+            }
+        }
+        @media (max-width: 590px) {
+            max-width: 400px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        @media (max-width: 450px) {
+            &__text {
+                width: 300px;
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 590px) {
+        padding-top: 50px;
     }
 }
